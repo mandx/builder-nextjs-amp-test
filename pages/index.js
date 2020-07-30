@@ -14,6 +14,7 @@ import BuilderPageWrapper from '../components/BuilderPageWrapper';
 // This instructs Next.js to check for the `?amp=1` query string
 export const config = { amp: 'hybrid' };
 
+// Set this in your environment or in an `.env` file
 builder.init(process.env.REACT_APP_BUILDER_API_KEY);
 
 export default function Home({ builderPage }) {
