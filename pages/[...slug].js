@@ -246,7 +246,7 @@ Home.getInitialProps = async function getInitialProps({ req, res, asPath }) {
   const modelName = ampMode ? 'amp-page' : 'page';
 
   const page = await builder
-    .get(modelName, { req, res, url: asPath, format: ampMode ? 'amp' : 'html' })
+    .get(modelName, { req, res, url: asPath, format: ampMode ? 'amp' : 'html', preview: true })
     .promise();
 
   return { builderPage: page };
