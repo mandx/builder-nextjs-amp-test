@@ -17,7 +17,7 @@ export const config = { amp: 'hybrid' };
 // Set this in your environment or in an `.env` file
 builder.init(process.env.REACT_APP_BUILDER_API_KEY);
 
-export default function Home({ builderPage }) {
+export default function Page({ builderPage }) {
   const isAmp = useAmp();
 
   // Render content from Builder.io if there's any.
